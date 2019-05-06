@@ -1,0 +1,83 @@
+ body {
+    background: white;
+    width: 100%;
+} 
+
+/*battleship board display*/
+/*  */
+
+/*battleship message*/
+h1#messageArea {
+	position: absolute;
+	top: 0;
+	left: 0;
+    color: blue;
+    font-size: 55px; 
+}
+
+
+/*battleship table*/
+table #board {
+    position: relative;
+    border-spacing: 0px;
+    border-color: black;
+    border: solid;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+/*battleship table rows*/
+tr {
+    height: 80px;
+}
+/*battleship table data*/
+td {
+	width: 80px;
+    height: 80px;
+    border: solid;
+    text-align: center;
+    font-size: 30px;
+}
+
+/*battleship form*/
+form {
+	position: absolute;
+	top: 40px;
+	right: 10px;
+	padding: 10px;
+	background-color: white;
+	z-index: 100;
+}
+
+/*form input*/
+form input {
+	background-color: white;
+	border-color: red;
+    font-size: 1.2em;
+    padding: 10px;
+}
+
+form #fireButton {
+    background-color: red;
+    padding: 10px;
+}
+   
+tbody>tr>:nth-child(1){
+    color:red;
+    text-align:center;
+    border: white;
+   }
+
+.numbers {
+    color: red;
+    border: none;
+    font-weight: bold;
+}
+
+.hit {
+    background-image: url("https://graphics.gaiaonline.com/images/profiles/v2/pictures/splat3_red.gif");
+}
+
+.miss {
+    color: blue;
+}

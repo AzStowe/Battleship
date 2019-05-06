@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Battleship</title>
+</head>
+
+<body>
+
+		<!--  -->
+		
+		<header>
+            <!-- battleship message display -->
+			<h1 id="messageArea">Battleship</h1>
+			<!-- battleship user inputs -->
+			<form>
+                <div class="input-group">
+                    <input type="text" id="guessInput" placeholder="A0" autofocus class="form-control">
+					<input type="button" id="fireButton" value="Fire!" class ="btn btn-danger text-white">
+                </div>
+            </form>
+        </header>
+        
+        <!-- battleship board -->
+         
+            <div>
+			<!-- battleship table -->
+			<table id="board" style="margin: 0 auto">
+				<!-- battleship row 0 -->
+				<tr>
+					<td id="00">A</td><td id="01"></td><td id="02"></td><td id="03"></td><td id="04"></td><td id="05"></td><td id="06"></td><td id="07"></td>
+				</tr>
+				<!-- battleship row 1 -->
+				<tr>
+					<td id="10">B</td><td id="11"></td><td id="12"></td><td id="13"></td><td id="14"></td><td id="15"></td><td id="16"></td><td id="17"></td>
+				</tr>
+				<!-- battleship row 2 -->
+				<tr>
+					<td id="20">C</td><td id="21"></td><td id="22"></td><td id="23"></td><td id="24"></td><td id="25"></td><td id="26"></td><td id="27"></td>
+				</tr>
+				<!-- battleship row 3 -->
+				<tr>
+					<td id="30">D</td><td id="31"></td><td id="32"></td><td id="33"></td><td id="34"></td><td id="35"></td><td id="36"></td><td id="37"></td>
+				</tr>
+				<!-- battleship row 4 -->
+				<tr>
+					<td id="40">E</td><td id="41"></td><td id="42"></td><td id="43"></td><td id="44"></td><td id="45"></td><td id="46"></td><td id="47"></td>
+				</tr>
+				<!-- battleship row 5 -->
+				<tr>
+					<td id="50">F</td><td id="51"></td><td id="52"></td><td id="53"></td><td id="54"></td><td id="55"></td><td id="56"></td><td id="57"></td>
+				</tr>
+				<!-- battleship row 6 -->
+				<tr>
+					<td id="60">G</td><td id="61"></td><td id="62"></td><td id="63"></td><td id="64"></td><td id="65"></td><td id="66"></td><td id="58"></td>
+                </tr>
+                <!-- battleship row 7-->
+                <tr>
+                    <td class ="numbers" id="60"></td><td class ="numbers"id="61">0</td><td class ="numbers"id="62">1</td><td class ="numbers"id="63">2</td><td class ="numbers"id="64">3</td><td class ="numbers"id="65">4</td><td class ="numbers"id="66">5</td><td class="numbers" id="67">6</td>
+                </tr>
+                
+            </table>	
+        	</div>		
+		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+		<script src="js/main.js"></script>
+
+	</body>
+    
+</html>
