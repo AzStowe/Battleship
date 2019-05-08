@@ -16,9 +16,9 @@ h1 {
 }
 h1#messageArea {
 	position: absolute;
-	top: 65px;
+	top: 75px;
 	left: 0;
-    color: blue;
+    color: red;
     font-size: 30px; 
 }
 
@@ -85,8 +85,11 @@ tbody>tr>:nth-child(1){
 
 .hit {
     background-image: url("https://graphics.gaiaonline.com/images/profiles/v2/pictures/splat3_red.gif");
+    background-color: red;
 }
+
 
 .miss {
     color: blue;
+    background-color: blue;
 }
