@@ -143,13 +143,13 @@ function handleFireButton() {
 
 //click function to register the input
 function getGuess(guess) {
-	let alphabet = ["A", "B", "C", "D", "E", "F", "G"];
+	let letters = ["A", "B", "C", "D", "E", "F", "G"];
 
 	if (guess === null || guess.length !== 2) {
 		alert("Please enter a letter and a number listed on the board.");
 	} else {
 		let firstChar = guess.charAt(0);
-		let row = alphabet.indexOf(firstChar);
+		let row = letters.indexOf(firstChar);
 		let column = guess.charAt(1);
 		if (isNaN(row) || isNaN(column)) {
 			alert("That isn't on the board.");
@@ -162,9 +162,6 @@ function getGuess(guess) {
 	return null;
 }
 
-
-
-// init - called when the page has completed loading
 window.onload = init;
 
 function init() {

@@ -3,10 +3,6 @@
     width: 100%;
 } 
 
-/*battleship board display*/
-/*  */
-
-/*battleship message*/
 h1 {
 	position: absolute;
 	top: 0;
@@ -23,7 +19,7 @@ h1#messageArea {
 }
 
 
-/*battleship table*/
+/*table*/
 table #board {
     position: relative;
     border-spacing: 0px;
@@ -33,11 +29,11 @@ table #board {
     text-align: center;
 }
 
-/*battleship table rows*/
+/*table rows*/
 tr {
     height: 80px;
 }
-/*battleship table data*/
+/*table data*/
 td {
 	width: 80px;
     height: 80px;
@@ -46,7 +42,7 @@ td {
     font-size: 30px;
 }
 
-/*battleship form*/
+/*form*/
 form {
 	position: absolute;
 	top: 40px;
