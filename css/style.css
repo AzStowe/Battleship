@@ -8,7 +8,6 @@
 .wrapper {
     display: grid;
     grid-gap: 10px;
-    margin: 0;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas: ". header box-1"
                          ". game-board ."
