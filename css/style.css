@@ -1,0 +1,54 @@
+
+  body {
+    margin: 40px;
+    background-color: white;
+    display: flex;
+}
+
+.wrapper {
+    display: grid;
+    grid-gap: 10px;
+    margin: 0;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: ". header box-1"
+                         ". game-board ."
+}
+.header {
+    grid-area: header;
+    grid-column: 2/3;
+    text-align: center;
+    justify-content: center;
+    color: red;
+}
+
+#game-board {
+    height: 100vh;
+    display: grid;
+    grid-area: game-board;
+    grid-template-columns: repeat(7, 10vmin);
+    grid-template-rows: repeat(7, 10vmin);
+    grid-gap: 1vmin;
+    align-content: center;
+    position: relative;
+}
+
+.cells {
+    background-color: grey;
+    border: 2px solid red;
+
+}
+
+.hit {
+    background-color: red;
+    border: 2px solid red;
+}
+
+.miss {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: blue;
+    border: 2px solid blue;
+    font-size: 10px;
+}
