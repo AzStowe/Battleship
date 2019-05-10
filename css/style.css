@@ -19,6 +19,12 @@
     text-align: center;
     justify-content: center;
     color: red;
+    font-family: 'Gugi', cursive;
+}
+
+h1 {
+    color: blue;
+    font-size: 50px;
 }
 
 #game-board {
@@ -39,8 +45,13 @@
 }
 
 .hit {
+    display: flex;
     background-color: red;
     border: 2px solid red;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 10px:
 }
 
 .miss {
