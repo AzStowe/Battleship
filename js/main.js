@@ -1,5 +1,4 @@
 /*--Cached Elements--*/
-
 let cells = document.querySelectorAll('.cells');
 let msgElem = document.getElementById('msg');
 
@@ -33,9 +32,9 @@ function getRow() {
     var ranNum2 = Math.floor(Math.random() * (12 - 7) + 7);
     var ranNum3 = Math.floor(Math.random() * (19 - 14) + 14);
     var ranNum4 = Math.floor(Math.random() * (40 - 35) + 35);
-    let horizontalStarting = [ranNum1, ranNum2, ranNum3, ranNum4];
-    let horizontalStart = horizontalStarting[Math.floor(Math.random() * horizontalStarting.length)];
-    return horizontalStart;
+    let horStarting = [ranNum1, ranNum2, ranNum3, ranNum4];
+    let horStart = horStarting[Math.floor(Math.random() * horStarting.length)];
+    return horStart;
 }
 
 /*--Get Column--*/
@@ -66,7 +65,7 @@ function checkWinner() {
         return;
 }
 }
-/*--Test Hit Function--*/
+/*--Get Hit Function--*/
 function getHit() {
     if (prevGuesses.includes(guess)) {
         return;
@@ -81,7 +80,7 @@ function getHit() {
         })
         if (ships.hits.hitsOne.length === 3) {
             sunkenShips ++;
-            msgElem.innerText = "YOU SANK THE FIRST SHIP!";
+            msgElem.innerText = "YOU SANK A SHIP!";
         } document.getElementById(guess).innerText = "HIT!"
     } else if (ships.locations.shipTwo.includes(guess)) {
         hit = true;
@@ -93,7 +92,7 @@ function getHit() {
         })
         if (ships.hits.hitsTwo.length === 3) {
             sunkenShips ++;
-            msgElem.innerText = "YOU SANK THE SECOND SHIP!";
+            msgElem.innerText = "YOU SANK A SHIP!";
         }
         document.getElementById(guess).innerText = "HIT!"
     } else {
@@ -104,7 +103,7 @@ function getHit() {
 }
 /*--Update InfoFunction--*/
 
-function giveMessage() {
+function showMessage() {
     let msgElem;
     msgElem = document.getElementById('msg');
 }
@@ -122,7 +121,7 @@ function handleClick(evt) {
     guess = parseInt(evt.target.id);
     square = document.getElementById(evt.target.id);
     getHit();
-    giveMessage();
+    showMessage();
     hitsDisplay();
     checkWinner();
 }
