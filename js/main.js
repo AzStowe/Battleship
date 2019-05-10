@@ -81,7 +81,7 @@ function getHit() {
         })
         if (ships.hits.hitsOne.length === 3) {
             sunkenShips ++;
-            msgElem.innerText = "SHIP SUNK";
+            msgElem.innerText = "YOU SANK THE FIRST SHIP!";
         } document.getElementById(guess).innerText = "HIT!"
     } else if (ships.locations.shipTwo.includes(guess)) {
         hit = true;
@@ -93,7 +93,7 @@ function getHit() {
         })
         if (ships.hits.hitsTwo.length === 3) {
             sunkenShips ++;
-            msgElem.innerText = "SHIP SUNK";
+            msgElem.innerText = "YOU SANK THE SECOND SHIP!";
         }
         document.getElementById(guess).innerText = "HIT!"
     } else {
